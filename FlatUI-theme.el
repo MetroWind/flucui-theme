@@ -57,7 +57,8 @@
  `(mode-line ((t (:background ,fui-concrete
                   :foreground ,fui-bg
                   :box nil))))
- `(mode-line-inactive ((t (:background ,fui-dark-concrete
+ `(mode-line-buffer-id ((t (:foreground ,fui-fg))))
+ `(mode-line-inactive ((t (:background ,fui-concrete
                            :foreground ,fui-bg))))
  `(fringe ((t (:background ,fui-bg))))
  `(minibuffer-prompt ((t (:slant italic :foreground ,fui-dark-concrete))))
@@ -77,34 +78,48 @@
  `(link-visited ((t (:foreground ,fui-dark-asphalt :underline t))))
  `(button ((t (:background ,fui-carrot :underline t))))
  `(header-line ((t (:background ,fui-dark-concrete
-                    :foreground ,fui-fg)))))
+                    :foreground ,fui-fg))))
 
-;; Rainbow delimiters
-(defun fui-rainbow-delim-set-face ()
-  (set-face-attribute
-   'rainbow-delimiters-depth-1-face nil
-   :foreground fui-fg)
-  (set-face-attribute
-   'rainbow-delimiters-depth-2-face nil
-   :foreground fui-dark-turquoise)
-  (set-face-attribute
-   'rainbow-delimiters-depth-3-face nil
-   :foreground fui-dark-river)
-  (set-face-attribute
-   'rainbow-delimiters-depth-4-face nil
-   :foreground fui-dark-amethyst)
-  (set-face-attribute
-   'rainbow-delimiters-depth-5-face nil
-   :foreground fui-dark-sunflower)
-  (set-face-attribute
-   'rainbow-delimiters-depth-6-face nil
-   :foreground fui-dark-emerald)
-  (set-face-attribute
-   'rainbow-delimiters-depth-7-face nil
-   :foreground fui-dark-concrete)
-  (set-face-attribute
-   'rainbow-delimiters-unmatched-face nil
-   :foreground fui-alizarin))
+ ;; Whitespace
+ `(whitespace-trailing ((t (:background ,fui-dark-clouds))))
+ `(whitespace-line ((t (:background ,fui-dark-concrete :foreground ,fui-bg))))
+
+ ;; ERC
+ `(erc-notice-face ((t (:foreground ,fui-dark-river
+                        :weight unspecified))))
+ `(erc-header-line ((t (:foreground ,fui-bg
+                        :background ,fui-dark-clouds))))
+ `(erc-timestamp-face ((t (:foreground ,fui-emerald
+                           :weight unspecified))))
+ `(erc-current-nick-face ((t (:foreground ,fui-dark-carrot
+                              :weight unspecified))))
+ `(erc-prompt-face ((t (:foreground ,fui-dark-concrete
+                        :background nil
+                        :slant italic
+                        :weight unspecified))))
+ `(erc-my-nick-face ((t (:foreground ,fui-dark-carrot))))
+
+ ;; Rainbow delimiters
+ `(rainbow-delimiters-depth-1-face ((t (:foreground ,fui-fg))))
+ `(rainbow-delimiters-depth-2-face ((t (:foreground ,fui-turquoise))))
+ `(rainbow-delimiters-depth-3-face ((t (:foreground ,fui-dark-river))))
+ `(rainbow-delimiters-depth-4-face ((t (:foreground ,fui-dark-amethyst))))
+ `(rainbow-delimiters-depth-5-face ((t (:foreground ,fui-dark-sunflower))))
+ `(rainbow-delimiters-depth-6-face ((t (:foreground ,fui-dark-emerald))))
+ `(rainbow-delimiters-depth-7-face ((t (:foreground ,fui-dark-concrete))))
+ `(rainbow-delimiters-unmatched-face ((t (:foreground ,fui-alizarin))))
+
+ ;; Git-gutter-fringe
+ `(git-gutter-fr:modified ((t (:foreground ,fui-amethyst))))
+ `(git-gutter-fr:added ((t (:foreground ,fui-emerald))))
+ `(git-gutter-fr:deleted ((t (:foreground ,fui-alizarin))))
+
+ ;; Powerline
+ `(mode-line ((t (:box nil))))
+ `(powerline-active2 ((t (:foreground ,fui-fg :background ,fui-dark-clouds))))
+ `(powerline-active1 ((t (:foreground ,fui-bg :background ,fui-emerald))))
+ `(powerline-inactive2 ((t (:foreground ,fui-bg :background ,fui-concrete))))
+ `(powerline-inactive1 ((t (:foreground ,fui-fg :background ,fui-dark-clouds)))))
 
 ;; Moinmoin mode
 (defun dv-moinmoin-set-face ()
@@ -156,33 +171,7 @@
     (dv-cua-set-face)
   (add-hook 'cua-mode-hook 'dv-cua-set-face))
 
-;; Powerline
-(defun fui-powerline-set-face ()
-  (set-face-attribute
-   'mode-line nil
-   :box nil)
-
-  (set-face-attribute
-   'powerline-active2 nil
-   :foreground fui-fg
-   :background fui-dark-clouds)
-  (set-face-attribute
-   'powerline-active1 nil
-   :foreground fui-bg
-   :background fui-emerald)
-  (set-face-attribute
-   'powerline-inactive2 nil
-   :foreground fui-bg
-   :background fui-dark-concrete)
-  (set-face-attribute
-   'powerline-inactive1 nil
-   :foreground fui-fg
-   :background fui-dark-clouds))
-  ;; (setq powerline-color2 (dv-color dv-default-bg)))
-
-(eval-after-load "rainbow-delimiters" '(fui-rainbow-delim-set-face))
-;; (eval-after-load "moinmoin-mode" '(dv-moinmoin-set-face))
-(eval-after-load "powerline" '(fui-powerline-set-face))
+;; (setq powerline-color2 (dv-color dv-default-bg)))
 
 (provide-theme 'FlatUI)
 
