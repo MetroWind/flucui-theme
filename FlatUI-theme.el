@@ -79,6 +79,7 @@
  `(button ((t (:background ,fui-carrot :underline t))))
  `(header-line ((t (:background ,fui-dark-concrete
                     :foreground ,fui-fg))))
+ `(shadow ((t (:foreground ,fui-concrete))))
 
  ;; Whitespace
  `(whitespace-trailing ((t (:background ,fui-dark-clouds))))
@@ -109,10 +110,24 @@
  `(rainbow-delimiters-depth-7-face ((t (:foreground ,fui-dark-concrete))))
  `(rainbow-delimiters-unmatched-face ((t (:foreground ,fui-alizarin))))
 
+ ;; Magit
+ `(magit-branch ((t (:foreground ,fui-river :background ,fui-bg))))
+ `(magit-tag ((t (:foreground ,fui-river :background ,fui-bg))))
+ `(magit-section-title ((t (:foreground ,fui-dark-emerald :background ,fui-bg))))
+ `(magit-item-highlight ((t (:foreground ,fui-fg :background ,fui-dark-clouds))))
+
  ;; Git-gutter-fringe
  `(git-gutter-fr:modified ((t (:foreground ,fui-amethyst))))
  `(git-gutter-fr:added ((t (:foreground ,fui-emerald))))
  `(git-gutter-fr:deleted ((t (:foreground ,fui-alizarin))))
+
+ ;; Company
+ `(company-preview ((t (:foreground ,fui-fg :background ,fui-sunflower))))
+ `(company-preview-common ((t (:foreground ,fui-fg :background ,fui-carrot))))
+ `(company-tooltip ((t (:foreground ,fui-fg :background ,fui-dark-clouds))))
+ `(company-tooltip-common ((t (:foreground ,fui-dark-carrot))))
+ `(company-tooltip-selection ((t (:background ,fui-concrete))))
+ `(company-tooltip-common-selection ((t (:foreground ,fui-dark-carrot))))
 
  ;; Powerline
  `(mode-line ((t (:box nil))))
