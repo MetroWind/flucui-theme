@@ -94,6 +94,7 @@
                            :weight unspecified))))
  `(erc-current-nick-face ((t (:foreground ,fui-dark-carrot
                               :weight unspecified))))
+ `(erc-input-face ((t (:foreground ,fui-amethyst))))
  `(erc-prompt-face ((t (:foreground ,fui-dark-concrete
                         :background nil
                         :slant italic
@@ -135,6 +136,14 @@
  `(powerline-active1 ((t (:foreground ,fui-bg :background ,fui-emerald))))
  `(powerline-inactive2 ((t (:foreground ,fui-bg :background ,fui-concrete))))
  `(powerline-inactive1 ((t (:foreground ,fui-fg :background ,fui-dark-clouds)))))
+
+;; Org mode hide leading stars
+(add-hook 'org-mode-hook
+          (lambda ()
+            (if org-hide-leading-stars
+                 (set-face-attribute
+                  'org-hide nil
+                  :foreground fui-bg))))
 
 ;; Moinmoin mode
 (defun dv-moinmoin-set-face ()
