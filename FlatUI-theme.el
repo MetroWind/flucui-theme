@@ -1,4 +1,4 @@
-;; -*- eval: (rainbow-mode); -*-
+;; -*- eval: (if (boundp 'rainbow-mode) (rainbow-mode)); -*-
 ;;; FlatUI-theme.el --- Custom face theme for Emacs
 
 ;; Copyright (C) 2010, 2011, 2012 Darksair.
@@ -66,7 +66,7 @@
  `(font-lock-comment-face ((t (:slant italic :foreground ,fui-concrete))))
  `(font-lock-constant-face ((t (:slant italic :foreground ,fui-dark-concrete))))
  `(font-lock-function-name-face ((t (:foreground ,fui-amethyst))))
- `(font-lock-keyword-face ((t (:foreground ,fui-dark-asphalt))))
+ `(font-lock-keyword-face ((t (:foreground ,fui-dark-asphalt :slant italic))))
  `(font-lock-string-face ((t (:foreground ,fui-dark-turquoise))))
  `(font-lock-type-face ((t (:foreground ,fui-dark-emerald))))
  `(font-lock-variable-name-face ((t (:foreground ,fui-river))))
@@ -144,58 +144,6 @@
                  (set-face-attribute
                   'org-hide nil
                   :foreground fui-bg))))
-
-;; Moinmoin mode
-(defun dv-moinmoin-set-face ()
-  (set-face-attribute
-   'moinmoin-wiki-link nil
-   :foreground (dv-color dv-link-fg)
-   :weight 'normal)
-  (set-face-attribute
-   'moinmoin-url nil
-   :foreground (dv-color dv-link-fg)
-   :height 1)
-  (set-face-attribute
-   'moinmoin-url-title nil
-   :foreground (dv-color dv-link-fg))
-  (set-face-attribute
-   'moinmoin-h4 nil
-   :foreground (dv-color dv-region-bg))
-  (set-face-attribute
-   'moinmoin-item nil
-   :foreground (dv-color dv-builtin-fg)
-   :weight 'normal)
-  (set-face-attribute
-   'moinmoin-tt nil
-   :foreground (dv-color dv-string-fg))
-  (set-face-attribute
-   'moinmoin-code-braces nil
-   :foreground (dv-color dv-default-fg))
-  (set-face-attribute
-   'moinmoin-code nil
-   :foreground (dv-color dv-string-fg))
-  (set-face-attribute
-   'moinmoin-rule nil
-   :foreground (dv-color dv-builtin-fg)
-   :weight 'normal)
-  (set-face-attribute
-   'moinmoin-blockquote-text nil
-   :foreground (dv-color dv-default-fg))
-  (set-face-attribute
-   'moinmoin-blockquote-indent nil
-   :background (dv-color dv-default-bg)))
-
-;; CUA
-(defun dv-cua-set-face ()
-  (set-face-attribute
-   'cua-rectangle nil
-   :foreground (dv-color dv-region-fg)
-   :background (dv-color dv-region-bg)))
-(if cua-mode
-    (dv-cua-set-face)
-  (add-hook 'cua-mode-hook 'dv-cua-set-face))
-
-;; (setq powerline-color2 (dv-color dv-default-bg)))
 
 (provide-theme 'FlatUI)
 
