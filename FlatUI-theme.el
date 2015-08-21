@@ -42,6 +42,7 @@
 (defvar fui-dark-carrot "#d35400")
 (defvar fui-dark-alizarin "#c0392b")
 (defvar fui-dark-clouds "#bdc3c7")
+(defvar fui-deep-clouds "#dce0e1")
 (defvar fui-dark-concrete "#7f8c8d")
 (defvar fui-bg fui-clouds)
 (defvar fui-fg fui-asphalt)
@@ -54,12 +55,12 @@
                :foreground ,fui-fg))))
  `(region ((t (:background ,fui-dark-sunflower
                :foreground ,fui-fg))))
- `(mode-line ((t (:background ,fui-concrete
-                  :foreground ,fui-bg
+ `(mode-line ((t (:background ,fui-deep-clouds
+                  :foreground ,fui-fg
                   :box nil))))
  `(mode-line-buffer-id ((t (:foreground ,fui-fg))))
- `(mode-line-inactive ((t (:background ,fui-concrete
-                           :foreground ,fui-bg))))
+ `(mode-line-inactive ((t (:background ,fui-dark-clouds
+                           :foreground ,fui-fg))))
  `(fringe ((t (:background ,fui-bg))))
  `(minibuffer-prompt ((t (:slant italic :foreground ,fui-dark-concrete))))
  `(font-lock-builtin-face ((t (:foreground ,fui-dark-asphalt))))
@@ -78,7 +79,7 @@
  `(link-visited ((t (:foreground ,fui-dark-asphalt :underline t))))
  `(button ((t (:background ,fui-carrot :underline t))))
  `(header-line ((t (:background ,fui-dark-concrete
-                    :foreground ,fui-fg))))
+                    :foreground ,fui-bg))))
  `(shadow ((t (:foreground ,fui-concrete))))
 
  ;; Whitespace
@@ -129,13 +130,44 @@
  `(company-tooltip-common ((t (:foreground ,fui-dark-carrot))))
  `(company-tooltip-selection ((t (:background ,fui-concrete))))
  `(company-tooltip-common-selection ((t (:foreground ,fui-dark-carrot))))
+ `(company-scrollbar-bg ((t (:background ,fui-dark-clouds))))
+ `(company-scrollbar-fg ((t (:background ,fui-concrete))))
 
  ;; Powerline
  `(mode-line ((t (:box nil))))
  `(powerline-active2 ((t (:foreground ,fui-fg :background ,fui-dark-clouds))))
  `(powerline-active1 ((t (:foreground ,fui-bg :background ,fui-emerald))))
  `(powerline-inactive2 ((t (:foreground ,fui-bg :background ,fui-concrete))))
- `(powerline-inactive1 ((t (:foreground ,fui-fg :background ,fui-dark-clouds)))))
+ `(powerline-inactive1 ((t (:foreground ,fui-fg :background ,fui-dark-clouds))))
+
+ ;; Smart mode line
+ `(sml/global  ((t (:foreground ,fui-fg))))
+ `(sml/charging ((t (:foreground ,fui-emerald))))
+ `(sml/discharging ((t (:foreground ,fui-dark-alizarin))))
+ `(sml/read-only ((t (:foreground ,fui-dark-emerald))))
+ `(sml/filename ((t (:foreground ,fui-river :weight bold))))
+ `(sml/prefix ((t (:foreground ,fui-dark-amethyst :weight normal :slant italic))))
+ `(sml/modes ((t (:foreground ,fui-fg :weight bold))))
+ `(sml/modified ((t (:foreground ,fui-alizarin))))
+ `(sml/outside-modified ((t (:foreground ,fui-bg :background ,fui-alizarin))))
+ `(sml/position-percentage ((t (:foreground ,fui-amethyst :slant normal))))
+ 
+ ;; Helm
+ `(helm-candidate-number ((t (:foreground ,fui-fg :background ,fui-sunflower))))
+ `(helm-source-header ((t (:foreground ,fui-bg :background ,fui-river
+                                       :weight normal :slant italic))))
+ `(helm-selection ((t (:background ,fui-dark-sunflower))))
+ `(helm-prefarg ((t (:foreground ,fui-dark-alizarin))))
+ `(helm-ff-directory ((t (:foreground ,fui-river))))
+ `(helm-ff-executable ((t (:foreground ,fui-dark-emerald))))
+ `(helm-ff-invalid-symlink ((t (:foreground ,fui-bg :background ,fui-dark-alizarin))))
+ `(helm-ff-prefix ((t (:background ,fui-sunflower))))
+ `(helm-M-x-key ((t (:foreground ,fui-dark-emerald))))
+
+ ;; TeX
+ `(font-latex-sedate-face ((t (:foreground ,fui-river))))
+ `(font-latex-math-face ((t (:foreground ,fui-dark-turquoise))))
+ )
 
 ;; Org mode hide leading stars
 (add-hook 'org-mode-hook
