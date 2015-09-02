@@ -6,7 +6,8 @@ supported.
 
 ## Screenshot
 
-![Screenshot](https://raw.github.com/Corsair/emacs-flatui-theme/master/shot.png)
+![Screenshot](https://raw.github.com/Corsair/emacs-flatui-theme/master/shot-1.png)
+![Screenshot](https://raw.github.com/Corsair/emacs-flatui-theme/master/shot-2.png)
 
 Note: Nyan cat not included :-p
 

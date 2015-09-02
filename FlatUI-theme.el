@@ -101,6 +101,7 @@
                         :slant italic
                         :weight unspecified))))
  `(erc-my-nick-face ((t (:foreground ,fui-dark-carrot))))
+ `(erc-pal-face ((t (:foreground ,fui-dark-amethyst))))
 
  ;; Rainbow delimiters
  `(rainbow-delimiters-depth-1-face ((t (:foreground ,fui-fg))))
@@ -151,7 +152,7 @@
  `(sml/modified ((t (:foreground ,fui-alizarin))))
  `(sml/outside-modified ((t (:foreground ,fui-bg :background ,fui-alizarin))))
  `(sml/position-percentage ((t (:foreground ,fui-amethyst :slant normal))))
- 
+
  ;; Helm
  `(helm-candidate-number ((t (:foreground ,fui-fg :background ,fui-sunflower))))
  `(helm-source-header ((t (:foreground ,fui-bg :background ,fui-river
@@ -167,6 +168,24 @@
  ;; TeX
  `(font-latex-sedate-face ((t (:foreground ,fui-river))))
  `(font-latex-math-face ((t (:foreground ,fui-dark-turquoise))))
+
+ ;; adoc-mode
+ `(markup-meta-hide-face ((t (:height 1.0 :foreground ,fui-fg))))
+ `(markup-meta-face ((t (:height 1.0 :foreground ,fui-fg :family nil))))
+ `(markup-reference-face ((t (:underline nil :foreground ,fui-dark-river))))
+ `(markup-gen-face ((t (:foreground ,fui-dark-river))))
+ `(markup-passthrough-face ((t (:inherit markup-gen-face))))
+ `(markup-replacement-face ((t (:family nil :foreground ,fui-amethyst))))
+ `(markup-list-face ((t (:weight bold))))
+ `(markup-secondary-text-face ((t (:height 1.0 :foreground ,fui-dark-emerald))))
+ `(markup-verbatim-face ((t (:foreground ,fui-dark-concrete))))
+ `(markup-typewriter-face ((t (:inherit nil))))
+ `(markup-title-0-face ((t (:height 1.2 :inherit markup-gen-face))))
+ `(markup-title-1-face ((t (:height 1.0 :inherit markup-gen-face))))
+ `(markup-title-2-face ((t (:height 1.0 :inherit markup-gen-face))))
+ `(markup-title-3-face ((t (:height 1.0 :inherit markup-gen-face))))
+ `(markup-title-4-face ((t (:height 1.0 :inherit markup-gen-face))))
+ `(markup-title-5-face ((t (:height 1.0 :inherit markup-gen-face))))
  )
 
 ;; Org mode hide leading stars
