@@ -81,6 +81,14 @@
  `(header-line ((t (:background ,fui-dark-concrete
                     :foreground ,fui-bg))))
  `(shadow ((t (:foreground ,fui-concrete))))
+ `(show-paren-match ((t (:background ,fui-emerald :foreground ,fui-clouds))))
+ `(show-paren-mismatch ((t (:background ,fui-alizarin
+                            :foreground ,fui-clouds))))
+
+ ;; Dired
+ `(dired-directory ((t (:foreground ,fui-river))))
+ `(dired-symlink ((t (:foreground ,fui-turquoise))))
+ `(dired-perm-write ((t (:foreground ,fui-dark-carrot))))
 
  ;; Whitespace
  `(whitespace-trailing ((t (:background ,fui-dark-clouds))))
@@ -162,6 +170,7 @@
  `(helm-ff-directory ((t (:foreground ,fui-river))))
  `(helm-ff-executable ((t (:foreground ,fui-dark-emerald))))
  `(helm-ff-invalid-symlink ((t (:foreground ,fui-bg :background ,fui-dark-alizarin))))
+ `(helm-ff-symlink ((t (:foreground ,fui-amethyst))))
  `(helm-ff-prefix ((t (:background ,fui-sunflower))))
  `(helm-M-x-key ((t (:foreground ,fui-dark-emerald))))
 
