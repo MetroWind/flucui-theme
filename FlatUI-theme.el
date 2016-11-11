@@ -33,6 +33,10 @@
 (defvar fui-alizarin "#e74c3c")
 (defvar fui-clouds "#ecf0f1")
 (defvar fui-concrete "#95a5a6")
+(defvar fui-asbestos "#7f8c8d")
+(defvar fui-silver "#bdc3c7")
+(defvar fui-pomegranate "#c0392b")
+(defvar fui-belizehole "#2980b9")
 (defvar fui-dark-turquoise "#16a085")
 (defvar fui-dark-emerald "#27ae60")
 (defvar fui-dark-river "#2980b9")
@@ -90,6 +94,13 @@
  `(dired-symlink ((t (:foreground ,fui-turquoise))))
  `(dired-perm-write ((t (:foreground ,fui-dark-carrot))))
 
+ ;; Diff
+ `(diff-added ((t (:background ,fui-clouds :foreground ,fui-belizehole))))
+ `(diff-removed ((t (:background ,fui-clouds :foreground ,fui-pomegranate))))
+ `(diff-context ((t (:background ,fui-clouds :foreground ,fui-fg))))
+ `(diff-file-header ((t (:bold t :background ,fui-concrete :weight bold))))
+ `(diff-header ((t (:background ,fui-silver))))
+   
  ;; Whitespace
  `(whitespace-trailing ((t (:background ,fui-dark-clouds))))
  `(whitespace-line ((t (:background ,fui-dark-concrete :foreground ,fui-bg))))
