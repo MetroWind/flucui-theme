@@ -84,7 +84,8 @@
  `(show-paren-match ((t (:background ,fui-emerald :foreground ,fui-clouds))))
  `(show-paren-mismatch ((t (:background ,fui-alizarin
                             :foreground ,fui-clouds))))
-
+ `(highlight ((t (:inverse-video nil :background ,fui-dark-clouds))))
+ 
  ;; Dired
  `(dired-directory ((t (:foreground ,fui-river))))
  `(dired-symlink ((t (:foreground ,fui-turquoise))))
