@@ -90,6 +90,13 @@
  `(dired-symlink ((t (:foreground ,fui-turquoise))))
  `(dired-perm-write ((t (:foreground ,fui-dark-carrot))))
 
+ ;; Diff
+ `(diff-added ((t (:background ,fui-clouds :foreground ,fui-river))))
+ `(diff-removed ((t (:background ,fui-clouds :foreground ,fui-alizarin))))
+ `(diff-context ((t (:background ,fui-clouds :foreground ,fui-fg))))
+ `(diff-file-header ((t (:bold t :background ,fui-concrete :weight bold))))
+ `(diff-header ((t (:background ,fui-dark-clouds))))
+   
  ;; Whitespace
  `(whitespace-trailing ((t (:background ,fui-dark-clouds))))
  `(whitespace-line ((t (:background ,fui-dark-concrete :foreground ,fui-bg))))
