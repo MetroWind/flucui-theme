@@ -220,6 +220,9 @@
    `(org-done ((t (:weight normal :foreground ,fui-dark-concrete))))
    `(org-todo ((t (:weight normal :foreground ,fui-carrot))))
    `(org-latex-and-related ((t (:foreground ,fui-concrete :italic t))))
+
+   ;; Notmuch
+   `(notmuch-search-unread-face ((t (:foreground ,fui-emerald))))
    ))
 
 (if (and (>= emacs-major-version 26) (equal window-system 'ns))
