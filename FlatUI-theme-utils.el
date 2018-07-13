@@ -31,7 +31,7 @@ Argument STYLE can be either 'light or 'dark."
         ((equal style 'dark)
          (load-theme 'FlatUI-Dark t))
 
-        (t (error (concat "Unknown FlatUI theme style: " (format "%S" style))))))
+        (t (error (format "Unknown FlatUI theme style: %S" style)))))
 
 ;;;###autoload
 (defun fui-theme-switch-style ()
@@ -44,8 +44,8 @@ Argument STYLE can be either 'light or 'dark."
         ((equal fui-theme-current-style 'light)
          (fui-theme-load-style 'dark)
          (setq fui-theme-current-style 'dark))
-        (t (error (concat "Invalid FlatUI current style: "
-                          (format "%S" fui-theme-current-style))))))
+        (t (error (format "Invalid FlatUI current style: %S"
+                          fui-theme-current-style)))))
 
 (provide 'FlatUI-theme-utils)
 

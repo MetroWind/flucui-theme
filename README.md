@@ -1,4 +1,4 @@
-# FLat UI Theme for Emacs
+# Flat UI Theme for Emacs
 
 Inspired by the color scheme provided at http://flatuicolors.com. This
 theme is for GNU Emacs version 24+, in which theming is officially
