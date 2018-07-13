@@ -15,8 +15,8 @@ Note: Nyan cat not included :-p
 ## Installation
 
 Copy the `FlatUI-*theme.el` files to somewhere in your Emacs
-load-path. Then either `M-x load-theme<RET>FlatUI` or `(load-theme
-'FlatUI t)`. Use `FlatUI-Dark` for the dark style.
+`custom-theme-load-path`. Then either `M-x load-theme<RET>FlatUI` or
+`(load-theme 'FlatUI t)`. Use `FlatUI-Dark` for the dark style.
 
 Additionally, you can also install `FlatUI-theme-utils.el`. It has a
 function to load either theme by specifying `'light` or `'dark`, and a
