@@ -8,6 +8,18 @@
 ;; to Public License, Version 2, as published by Sam Hocevar. See
 ;; http://www.wtfpl.net/ for more details.
 
+;; Author: MetroWind <chris.corsair@gmail.com>
+;; URL: https://github.com/MetroWind/emacs-flatui-theme
+;; Keywords: lisp
+;; Version: 1.0
+;; Package-Requires: ((emacs "24"))
+
+;;; Commentary:
+;;
+;; FlatUI theme is a custom theme for Emacs, inspired by
+;; http://flatuicolors.com. It Has both light and dark variants. This
+;; file provides light variant.
+
 ;;; Code:
 
 ;; Note: for every face that is customized here, a customization for
@@ -237,4 +249,4 @@
 ;; no-byte-compile: t
 ;; End:
 
-;;; FlatUI-theme.el  ends here
+;;; FlatUI-theme.el ends here

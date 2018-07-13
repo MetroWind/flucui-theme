@@ -8,6 +8,12 @@
 ;; to Public License, Version 2, as published by Sam Hocevar. See
 ;; http://www.wtfpl.net/ for more details.
 
+;;; Commentary:
+;;
+;; FlatUI theme is a custom theme for Emacs, inspired by
+;; http://flatuicolors.com. It Has both light and dark variants. This
+;; file provides dark variant.
+
 ;;; Code:
 
 ;; Note: for every face that is customized here, a customization for
@@ -238,4 +244,4 @@
 ;; no-byte-compile: t
 ;; End:
 
-;;; FlatUI-Dark-theme.el  ends here
+;;; FlatUI-Dark-theme.el ends here
