@@ -94,7 +94,8 @@
    `(show-paren-match ((t (:background ,fui-emerald :foreground ,fui-clouds))))
    `(show-paren-mismatch ((t (:background ,fui-alizarin
                               :foreground ,fui-clouds))))
-   `(highlight ((t (:inverse-video nil :background ,fui-dark-clouds))))
+   `(highlight ((t (:inverse-video nil :background ,fui-deep-clouds))))
+   `(hl-line ((t (:inverse-video nil :background ,fui-deep-clouds))))
 
    ;; Dired
    `(dired-directory ((t (:foreground ,fui-river))))
@@ -233,8 +234,24 @@
    `(org-todo ((t (:weight normal :foreground ,fui-carrot))))
    `(org-latex-and-related ((t (:foreground ,fui-concrete :italic t))))
 
+   ;; Message
+   `(message-header-name ((t (:foreground ,fui-dark-concrete))))
+   `(message-header-other ((t (:foreground ,fui-fg))))
+   `(message-header-cc ((t (:inherit message-header-other))))
+   `(message-header-newsgroups ((t (:inherit message-header-other))))
+   `(message-header-xheader ((t (:inherit message-header-other))))
+   `(message-header-subject ((t (:foreground ,fui-dark-emerald))))
+   `(message-header-to ((t (:foreground ,fui-dark-river))))
+   `(message-mml ((t (:foreground ,fui-concrete))))
+
    ;; Notmuch
-   `(notmuch-search-unread-face ((t (:foreground ,fui-dark-river))))
+   `(notmuch-search-unread ((t (:foreground ,fui-dark-river))))
+   `(notmuch-tag ((t (:foreground ,fui-dark-emerald))))
+   `(notmuch-tree-match-author ((t (:foreground ,fui-dark-river))))
+   `(notmuch-tree-no-match ((t (:foreground ,fui-concrete))))
+   `(notmuch-tree-match-tag ((t (:inherit notmuch-tree-match-author-face))))
+   `(notmuch-tag-unread ((t (:foreground ,fui-carrot))))
+   `(notmuch-message-summary ((t (:foreground ,fui-dark-concrete))))
    ))
 
 (if (and (>= emacs-major-version 26) (equal window-system 'ns))
