@@ -207,6 +207,7 @@
    ;; TeX
    `(font-latex-sedate-face ((t (:foreground ,fui-river))))
    `(font-latex-math-face ((t (:foreground ,fui-dark-turquoise))))
+   `(font-latex-script-char-face ((t (:inherit font-latex-math-face))))
 
    ;; adoc-mode
    `(markup-meta-hide-face ((t (:height 1.0 :foreground ,fui-fg))))
