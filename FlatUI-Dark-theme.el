@@ -240,13 +240,13 @@
    `(message-mml ((t (:foreground ,fui-dark-concrete))))
 
    ;; Notmuch
-   `(notmuch-search-unread ((t (:foreground ,fui-river))))
-   `(notmuch-tag ((t (:foreground ,fui-emerald))))
-   `(notmuch-tree-match-author ((t (:foreground ,fui-river))))
-   `(notmuch-tree-no-match ((t (:foreground ,fui-concrete))))
-   `(notmuch-tree-match-tag ((t (:inherit notmuch-tree-match-author-face))))
-   `(notmuch-tag-unread ((t (:foreground ,fui-carrot))))
-   `(notmuch-message-summary ((t (:foreground ,fui-concrete))))
+   `(notmuch-search-unread-face ((t (:foreground ,fui-river))))
+   `(notmuch-tag-face ((t (:foreground ,fui-emerald))))
+   `(notmuch-tree-match-author-face ((t (:foreground ,fui-river))))
+   `(notmuch-tree-no-match-face ((t (:foreground ,fui-concrete))))
+   `(notmuch-tree-match-tag-face ((t (:inherit notmuch-tree-match-author-face))))
+   `(notmuch-tag-unread-face ((t (:foreground ,fui-carrot))))
+   `(notmuch-message-summary-face ((t (:foreground ,fui-concrete))))
    ))
 
 (if (and (>= emacs-major-version 26) (equal window-system 'ns))
