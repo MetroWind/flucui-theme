@@ -160,7 +160,7 @@
    `(company-preview-common ((t (:foreground ,fui-fg :background ,fui-carrot))))
    `(company-tooltip ((t (:foreground ,fui-fg :background ,fui-asphalt))))
    `(company-tooltip-common ((t (:foreground ,fui-sunflower))))
-   `(company-tooltip-selection ((t (:background ,fui-bg))))
+   `(company-tooltip-selection ((t (:background ,fui-deep-asphalt))))
    `(company-tooltip-common-selection ((t (:foreground ,fui-sunflower))))
    `(company-tooltip-annotation ((t (:foreground ,fui-emerald))))
    `(company-scrollbar-bg ((t (:background ,fui-bg))))
