@@ -99,7 +99,7 @@
 
    ;; Dired
    `(dired-directory ((t (:foreground ,fui-river))))
-   `(dired-symlink ((t (:foreground ,fui-turquoise))))
+   `(dired-symlink ((t (:foreground ,fui-dark-turquoise))))
    `(dired-perm-write ((t (:foreground ,fui-dark-carrot))))
 
    ;; Diff
@@ -117,7 +117,7 @@
    `(erc-notice-face ((t (:foreground ,fui-dark-river
                           :weight unspecified))))
    `(erc-header-line ((t (:foreground ,fui-bg :background ,fui-dark-clouds))))
-   `(erc-timestamp-face ((t (:foreground ,fui-emerald
+   `(erc-timestamp-face ((t (:foreground ,fui-concrete
                              :weight unspecified))))
    `(erc-current-nick-face ((t (:foreground ,fui-dark-carrot
                                 :weight unspecified))))
@@ -203,6 +203,14 @@
    `(helm-ff-symlink ((t (:foreground ,fui-amethyst))))
    `(helm-ff-prefix ((t (:background ,fui-sunflower))))
    `(helm-M-x-key ((t (:foreground ,fui-dark-emerald))))
+   `(helm-buffer-file ((t (:foreground ,fui-fg))))
+   `(helm-buffer-archive ((t (:inherit helm-buffer-file))))
+   `(helm-buffer-directory ((t (:foreground ,fui-river :background nil))))
+   `(helm-buffer-not-saved ((t (:foreground ,fui-dark-alizarin))))
+   `(helm-buffer-modified ((t (:foreground ,fui-carrot))))
+   `(helm-buffer-process ((t (:foreground ,fui-dark-emerald))))
+   `(helm-buffer-size ((t (:foreground ,fui-concrete))))
+   `(helm-ff-file ((t (:inherit default))))
 
    ;; TeX
    `(font-latex-sedate-face ((t (:foreground ,fui-river))))
@@ -234,6 +242,7 @@
    `(org-done ((t (:weight normal :foreground ,fui-dark-concrete))))
    `(org-todo ((t (:weight normal :foreground ,fui-carrot))))
    `(org-latex-and-related ((t (:foreground ,fui-concrete :italic t))))
+   `(org-checkbox ((t (:weight normal :foreground ,fui-dark-concrete))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,fui-dark-concrete))))

@@ -197,6 +197,14 @@
    `(helm-ff-symlink ((t (:foreground ,fui-amethyst))))
    `(helm-ff-prefix ((t (:background ,fui-sunflower))))
    `(helm-M-x-key ((t (:foreground ,fui-dark-emerald))))
+   `(helm-buffer-file ((t (:foreground ,fui-fg))))
+   `(helm-buffer-archive ((t (:inherit helm-buffer-file))))
+   `(helm-buffer-directory ((t (:foreground ,fui-river :background nil))))
+   `(helm-buffer-not-saved ((t (:foreground ,fui-dark-alizarin))))
+   `(helm-buffer-modified ((t (:foreground ,fui-carrot))))
+   `(helm-buffer-process ((t (:foreground ,fui-dark-emerald))))
+   `(helm-buffer-size ((t (:foreground ,fui-dark-concrete))))
+   `(helm-ff-file ((t (:inherit default))))
 
    ;; TeX
    `(font-latex-sedate-face ((t (:foreground ,fui-river))))
@@ -228,6 +236,7 @@
    `(org-done ((t (:weight normal :foreground ,fui-dark-concrete))))
    `(org-todo ((t (:weight normal :foreground ,fui-carrot))))
    `(org-latex-and-related ((t (:foreground ,fui-concrete :italic t))))
+   `(org-checkbox ((t (:weight normal :foreground ,fui-concrete))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,fui-concrete))))
