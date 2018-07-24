@@ -21,3 +21,6 @@ Copy the `FlatUI-*theme.el` files to somewhere in your Emacs
 Additionally, you can also install `FlatUI-theme-utils.el`. It has a
 function to load either theme by specifying `'light` or `'dark`, and a
 function to switch between the two.
+
+The `other` directory contains the color setting for some other
+programs.
