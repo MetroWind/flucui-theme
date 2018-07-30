@@ -81,7 +81,7 @@
    `(lazy-highlight ((t (:background ,fui-concrete))))
    `(link ((t (:foreground ,fui-river :underline t))))
    `(link-visited ((t (:foreground ,fui-dark-concrete :underline t))))
-   `(button ((t (:background ,fui-bg :underline t))))
+   `(button ((t (:background ,fui-bg :underline t :foreground nil))))
    `(header-line ((t (:background ,fui-asphalt
                       :foreground ,fui-fg))))
    `(shadow ((t (:foreground ,fui-concrete))))
@@ -196,6 +196,7 @@
    `(helm-ff-invalid-symlink ((t (:foreground ,fui-bg :background ,fui-dark-alizarin))))
    `(helm-ff-symlink ((t (:foreground ,fui-amethyst))))
    `(helm-ff-prefix ((t (:background ,fui-sunflower))))
+   `(helm-ff-dotted-directory ((t (:background nil :foreground ,fui-dark-concrete))))
    `(helm-M-x-key ((t (:foreground ,fui-dark-emerald))))
    `(helm-buffer-file ((t (:foreground ,fui-fg))))
    `(helm-buffer-archive ((t (:inherit helm-buffer-file))))
