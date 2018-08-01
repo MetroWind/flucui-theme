@@ -91,6 +91,9 @@
    `(highlight ((t (:inverse-video nil :background ,fui-asphalt))))
    `(hl-line ((t (:inverse-video nil :background ,fui-asphalt))))
 
+   ;; Face for specific prog modes
+   `(sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
+
    ;; Dired
    `(dired-directory ((t (:foreground ,fui-river))))
    `(dired-symlink ((t (:foreground ,fui-turquoise))))
