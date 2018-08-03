@@ -247,6 +247,7 @@
    `(org-todo ((t (:weight normal :foreground ,fui-carrot))))
    `(org-latex-and-related ((t (:foreground ,fui-concrete :italic t))))
    `(org-checkbox ((t (:weight normal :foreground ,fui-dark-concrete))))
+   `(org-mode-line-clock ((t (:background nil))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,fui-dark-concrete))))
