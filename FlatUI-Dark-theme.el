@@ -242,6 +242,7 @@
    `(org-latex-and-related ((t (:foreground ,fui-concrete :italic t))))
    `(org-checkbox ((t (:weight normal :foreground ,fui-concrete))))
    `(org-mode-line-clock ((t (:background nil))))
+   `(org-document-title ((t (:weight normal :foreground nil))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,fui-concrete))))
