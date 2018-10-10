@@ -1,4 +1,4 @@
-;;; FlatUI-Dark-theme.el --- Custom face theme for Emacs
+;;; flucui-dark-theme.el --- Custom theme inspired by the FlatUI palette
 
 ;; Copyright (C) 2018 MetroWind.
 
@@ -8,9 +8,15 @@
 ;; to Public License, Version 2, as published by Sam Hocevar. See
 ;; http://www.wtfpl.net/ for more details.
 
+;; Author: MetroWind <chris.corsair@gmail.com>
+;; URL: https://github.com/MetroWind/emacs-flatui-theme
+;; Keywords: lisp
+;; Version: 1.0
+;; Package-Requires: ((emacs "24"))
+
 ;;; Commentary:
 ;;
-;; FlatUI theme is a custom theme for Emacs, inspired by
+;; Fluc UI theme is a custom theme for Emacs, inspired by
 ;; http://flatuicolors.com. It Has both light and dark variants. This
 ;; file provides dark variant.
 
@@ -20,7 +26,7 @@
 ;; it should be also provided in the light version. Otherwise it could
 ;; be ugly when switching bwteen styles
 
-(deftheme FlatUI-Dark
+(deftheme flucui-dark
   "Inspired by the color scheme from flatuicolors.com.")
 
 ;; Colors
@@ -52,7 +58,7 @@
      (fui-fg fui-dark-clouds))
 
   (custom-theme-set-faces
-   'FlatUI-Dark
+   'flucui-dark
    `(default ((t (:background ,fui-bg
                   :foreground ,fui-fg))))
    `(cursor ((t (:background ,fui-carrot
@@ -271,10 +277,10 @@
           (add-to-list 'default-frame-alist '(ns-appearance . dark))
         (setcdr (assoc 'ns-appearance default-frame-alist) 'dark))))
 
-(provide-theme 'FlatUI-Dark)
+(provide-theme 'flucui-dark)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; FlatUI-Dark-theme.el ends here
+;;; flucui-dark-theme.el ends here
