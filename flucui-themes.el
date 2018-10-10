@@ -9,7 +9,7 @@
 ;; http://www.wtfpl.net/ for more details.
 
 ;; Author: MetroWind <chris.corsair@gmail.com>
-;; URL: https://github.com/MetroWind/emacs-flatui-theme
+;; URL: https://github.com/MetroWind/flucui-theme
 ;; Keywords: lisp
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "24"))
