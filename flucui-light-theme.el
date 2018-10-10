@@ -270,12 +270,6 @@
    `(notmuch-message-summary-face ((t (:foreground ,fui-dark-concrete))))
    ))
 
-(if (and (>= emacs-major-version 26) (equal window-system 'ns))
-    ;; Don't specify Emacs appearance
-    (let ((appearance-pair (assoc 'ns-appearance default-frame-alist)))
-      (if (equal (cdr appearance-pair) 'dark)
-        (setcdr (assoc 'ns-appearance default-frame-alist) nil))))
-
 (provide-theme 'flucui-light)
 
 ;; Local Variables:
