@@ -14,13 +14,15 @@ Note: Nyan cat not included :-p
 
 ## Installation
 
-Copy the `flucui-*-theme.el` files to somewhere in your Emacs
-`custom-theme-load-path`. Then either `M-x load-theme<RET>flucui-light` or
-`(load-theme 'flucui-light t)`. Use `-dark` for the dark style.
+Install `flucui-themes` from Melpa, and call
+`(flucui-themes-load-style 'light)` (or `'dark`) to activate the
+theme. The function `flucui-themes-switch-style` can be used to toggle
+between light and dark variant.
 
-Additionally, you can also install `flucui-themes.el`. It has a
-function to load either theme by specifying `'light` or `'dark`, and a
-function to switch between the two.
+If you want to install manually, copy the `flucui-*-theme.el` files to
+somewhere in your Emacs `custom-theme-load-path`. Then either `M-x
+load-theme<RET>flucui-light` or `(load-theme 'flucui-light t)`. Use
+`-dark` for the dark style.
 
 The `other` directory contains the color setting for some other
 programs.
