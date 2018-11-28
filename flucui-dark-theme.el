@@ -175,6 +175,11 @@
    `(company-scrollbar-bg ((t (:background ,fui-bg))))
    `(company-scrollbar-fg ((t (:background ,fui-asphalt))))
 
+   ;; Cperl
+   `(cperl-array-face ((t (:weight bold :inherit font-lock-variable-name-face))))
+   `(cperl-hash-face ((t (:weight bold :slant italic :inherit font-lock-variable-name-face))))
+   `(cperl-nonoverridable-face ((t (:inherit font-lock-builtin-face))))
+
    ;; Powerline
    `(mode-line ((t (:box nil))))
    `(powerline-active2 ((t (:foreground ,fui-fg :background ,fui-dark-clouds))))
