@@ -90,7 +90,7 @@
    `(button ((t (:background ,fui-bg :underline t :foreground nil))))
    `(header-line ((t (:background ,fui-asphalt
                       :foreground ,fui-fg))))
-   `(shadow ((t (:foreground ,fui-concrete))))
+   `(shadow ((t (:foreground ,fui-dark-concrete))))
    `(show-paren-match ((t (:background ,fui-emerald :foreground ,fui-bg))))
    `(show-paren-mismatch ((t (:background ,fui-alizarin
                               :foreground ,fui-bg))))
