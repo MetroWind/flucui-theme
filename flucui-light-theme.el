@@ -273,6 +273,10 @@
    `(notmuch-tree-match-tag-face ((t (:inherit notmuch-tree-match-author-face))))
    `(notmuch-tag-unread-face ((t (:foreground ,fui-carrot))))
    `(notmuch-message-summary-face ((t (:foreground ,fui-dark-concrete))))
+
+   ;; Highlight-indent-guides
+   `(highlight-indent-guides-odd-face ((t (:background ,fui-deep-clouds))))
+   `(highlight-indent-guides-even-face ((t (:background nil))))
    ))
 
 (provide-theme 'flucui-light)

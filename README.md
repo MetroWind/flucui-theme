@@ -1,5 +1,7 @@
 # Fluc UI Theme for Emacs
 
+[![MELPA](https://melpa.org/packages/flucui-themes-badge.svg)](https://melpa.org/#/flucui-themes)
+
 Inspired by the color scheme provided at http://flatuicolors.com. This
 theme is for GNU Emacs version 24+, in which theming is officially
 supported.
