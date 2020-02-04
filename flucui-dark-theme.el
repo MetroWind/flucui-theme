@@ -96,6 +96,7 @@
                               :foreground ,fui-bg))))
    `(highlight ((t (:inverse-video nil :background ,fui-asphalt))))
    `(hl-line ((t (:inverse-video nil :background ,fui-asphalt))))
+   `(widget-field ((t (:background ,fui-dark-concrete))))
 
    ;; Face for specific prog modes
    `(sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
@@ -277,6 +278,11 @@
    ;; Highlight-indent-guides
    `(highlight-indent-guides-odd-face ((t (:background ,fui-deep-asphalt))))
    `(highlight-indent-guides-even-face ((t (:background nil))))
+
+   ;; Telega
+   `(telega-msg-heading ((t (:background nil :foreground ,fui-emerald :inherit nil))))
+   `(telega-msg-inline-reply ((t (:foreground ,fui-dark-concrete :inherit nil))))
+   `(telega-entity-type-texturl ((t (:inherit nil :foreground ,fui-river))))
    ))
 
 (provide-theme 'flucui-dark)
