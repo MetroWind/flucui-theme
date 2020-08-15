@@ -256,6 +256,10 @@
    `(org-mode-line-clock ((t (:background nil))))
    `(org-document-title ((t (:weight normal :foreground nil))))
 
+   ;; org-tree-slide
+   `(org-tree-slide-header-overlay-face
+     ((t (:inherit font-lock-comment-face :foreground nil :background nil))))
+
    ;; Message
    `(message-header-name ((t (:foreground ,fui-dark-concrete))))
    `(message-header-other ((t (:foreground ,fui-fg))))
