@@ -72,12 +72,12 @@
    `(mode-line-inactive ((t (:background ,fui-dark-clouds
                              :foreground ,fui-fg))))
    `(fringe ((t (:background ,fui-bg))))
-   `(minibuffer-prompt ((t (:slant italic :foreground ,fui-dark-concrete))))
+   `(minibuffer-prompt ((t (:inherit italic :foreground ,fui-dark-concrete))))
    `(font-lock-builtin-face ((t (:foreground ,fui-dark-asphalt))))
-   `(font-lock-comment-face ((t (:slant italic :foreground ,fui-concrete))))
-   `(font-lock-constant-face ((t (:slant italic :foreground ,fui-dark-concrete))))
+   `(font-lock-comment-face ((t (:inherit italic :foreground ,fui-concrete))))
+   `(font-lock-constant-face ((t (:inherit italic :foreground ,fui-dark-concrete))))
    `(font-lock-function-name-face ((t (:foreground ,fui-amethyst))))
-   `(font-lock-keyword-face ((t (:foreground ,fui-dark-asphalt :slant italic))))
+   `(font-lock-keyword-face ((t (:foreground ,fui-dark-asphalt :inherit italic))))
    `(font-lock-string-face ((t (:foreground ,fui-dark-turquoise))))
    `(font-lock-type-face ((t (:foreground ,fui-dark-emerald))))
    `(font-lock-variable-name-face ((t (:foreground ,fui-river))))
@@ -128,7 +128,7 @@
    `(erc-input-face ((t (:foreground ,fui-amethyst))))
    `(erc-prompt-face ((t (:foreground ,fui-dark-concrete
                           :background nil
-                          :slant italic
+                          :inherit italic
                           :weight unspecified))))
    `(erc-my-nick-face ((t (:foreground ,fui-dark-carrot))))
    `(erc-pal-face ((t (:foreground ,fui-dark-amethyst))))
@@ -178,7 +178,7 @@
 
    ;; Cperl
    `(cperl-array-face ((t (:weight bold :inherit font-lock-variable-name-face))))
-   `(cperl-hash-face ((t (:weight bold :slant italic :inherit font-lock-variable-name-face))))
+   `(cperl-hash-face ((t (:weight bold :inherit (italic font-lock-variable-name-face)))))
    `(cperl-nonoverridable-face ((t (:inherit font-lock-builtin-face))))
 
    ;; Powerline
@@ -194,7 +194,7 @@
    `(sml/discharging ((t (:foreground ,fui-dark-alizarin))))
    `(sml/read-only ((t (:foreground ,fui-dark-emerald))))
    `(sml/filename ((t (:foreground ,fui-river :weight bold))))
-   `(sml/prefix ((t (:foreground ,fui-dark-amethyst :weight normal :slant italic))))
+   `(sml/prefix ((t (:foreground ,fui-dark-amethyst :weight normal :inherit italic))))
    `(sml/modes ((t (:foreground ,fui-fg :weight bold))))
    `(sml/modified ((t (:foreground ,fui-alizarin))))
    `(sml/outside-modified ((t (:foreground ,fui-bg :background ,fui-alizarin))))
@@ -203,7 +203,7 @@
    ;; Helm
    `(helm-candidate-number ((t (:foreground ,fui-fg :background nil))))
    `(helm-source-header ((t (:foreground ,fui-bg :background ,fui-river
-                                         :weight normal :slant italic))))
+                                         :weight normal :inherit italic))))
    `(helm-selection ((t (:background ,fui-dark-sunflower))))
    `(helm-prefarg ((t (:foreground ,fui-dark-alizarin))))
    `(helm-ff-directory ((t (:foreground ,fui-river))))
